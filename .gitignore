@@ -1,0 +1,11 @@
+# The config of the environment
+.env
+
+# The files ejected by Webpack
+build/
+
+# Files ejected by test coverage
+coverage/
+
+# Project dependencies
+node_modules/

@@ -1,0 +1,55 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "defaultParams": true
+    }
+  },
+  "rules": {
+    "class-methods-use-this": 0,
+    "no-underscore-dangle": 0,
+    // A jsx extension is not required for files containing jsx
+    "react/jsx-filename-extension": 0,
+    // This rule struggles with flow and class properties (we're not using class properties so it's ok)
+    "react/sort-comp": 2,
+    "react/forbid-prop-types": 0,
+    "react/no-did-mount-set-state": 0,
+    "react/require-default-props": 0,
+
+    // This rule really struggles with Redux and HOCs
+    "react/prop-types": 0,
+    // ignore linebreak style. the CRLF / LF endings wont matter
+    // if a windows user correctly converts CRLF to LF upon commits otherwise
+    // there are errors every line.
+    "linebreak-style": 0,
+
+    // import/export related rules
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    /* ToDo: add import rule to warning user, order absolute imports before relative ones */
+
+    // Allow for..in
+    "no-restricted-syntax": 0,
+    "no-console": 2,
+
+    // Disallow because componentWillMount is deprecated
+    "no-did-mount-set-state": 0
+  },
+  "settings": {
+    "import/resolver": {  
+      "node": {
+        "extensions": [".js",".jsx",".ts",".tsx"]
+      }
+    }
+  }
+}
