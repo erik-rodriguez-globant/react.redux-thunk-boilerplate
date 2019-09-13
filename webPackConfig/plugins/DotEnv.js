@@ -1,12 +1,13 @@
 const DotEnvPlugin = require('webpack-dotenv-plugin')
 const { DefinePlugin } = require('webpack')
+const colors = require('ansi-colors');
 const  blackListRemover = require('../../src/utils/blackListRemover');
 
 class DotEnv {
-  constructor(path = './.env', blacklist = ['example']) {
-    this.path = path
-    this.blacklist = blacklist
-    const env = this.envParser()
+  constructor(path = './.env', blacklist = []) {
+    this.path = path;
+    this.blacklist = blacklist;
+    const env = this.envParser();
 
     /* Remove blacklist keys */
     blackListRemover(env, this.blacklist);
@@ -26,10 +27,10 @@ class DotEnv {
   envParser() {
     try {
       /* DotEnvPlugin: Reads, parses and exports the listed env vars from .env */
-      return new DotEnvPlugin({ sample: '', path: this.path })
+      return new DotEnvPlugin()
     } catch (e) {
       /* eslint-disable no-console */
-      console.warn(`Failed to load ${this.path}.`)
+      console.log(colors.bold.red(`Failed to load ${this.path}.`));
       return {}
     }
   }

@@ -1,26 +1,28 @@
-const DotEnv = require('../DotEnv')
-const blackListRemover = require('../../../src/utils/blackListRemover')
+const DotEnv = require('../DotEnv');
+const blackListRemover = require('../../../src/utils/blackListRemover');
 
-it('Should be an instance of an object', () => {
-  expect(new DotEnv()).toBeInstanceOf(Object)
-})
+describe('Class methods', () => {
+  it('Must be an instance of an object', () => {
+    expect(new DotEnv()).toBeInstanceOf(Object)
+  })
+});
 
-describe('blackList methods', () => {
+describe('BlackList methods', () => {
   const blackList = ['envTest', 'envConfig']
   const env = {
     env: 'env',
     envConfig: 'envConfig',
   }
 
-  it('Should have been called blackListRemover and return something', () => {
+  it('Must have been called blackListRemover', () => {
     const mock = jest.fn(blackListRemover(env, blackList));
     mock();
 
     expect(mock).toHaveReturned();
   })
 
-  it('Should remove blacklisted items', () => {
+  it('Must remove blacklisted items', () => {
     const envToArray = Object.values(env)
     expect(envToArray).toHaveLength(1)
   })
-})
+});

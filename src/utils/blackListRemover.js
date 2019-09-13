@@ -1,8 +1,8 @@
 /*
-* Written by Erik Genaro Rodriguez Lazcano <erik.genaro@gmail.com>, Augut 2019
-* Given a list of items and a blacklist (if there is one item inside it) 
-* check if in those items(given list) actually exists an item
-* named equal as one blacklisted items
+* Written by Erik Genaro Rodriguez Lazcano <erik.genaro@gmail.com>, August 2019
+* Given a list of .environment files and a blacklist
+* compare if in that given list exists a file named equal as the blacklist,
+* if so remove it
 */
 
 /* eslint no-param-reassign: ["error", { "props": false }] */
