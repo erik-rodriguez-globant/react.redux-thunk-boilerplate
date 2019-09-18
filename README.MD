@@ -6,7 +6,7 @@
 ## You can use it to achieve the requirements of a medium or large project using Webpack and Babel stuff, redux implementation and a bunch of configuration you're going happy to have
 
 - Installation
->**npm install** `@androiderik/reactboileplate`
+>**npm install** `reactboileplate`
 
 - Run the project
 > `Of course you need to have installed nodejs and npm. Note: there is a yarn.lock if you prefer to install the package with it`
