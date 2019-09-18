@@ -1,23 +1,21 @@
 
-# Welcome to a powerfull and sppedy React Boilerplate
+# Welcome to a powerfull React-Redux Boilerplate
 
   
 
-## A React boilerplate that you can use to achieve the requirements of a medium or large project using Webpack  and Babel stuff and a bunch of configuration you're going happy to have
+## You can use it to achieve the requirements of a medium or large project using Webpack and Babel stuff, redux implementation and a bunch of configuration you're going happy to have
 
-  
+- Installation
+>**npm install** `@androiderik/reactboileplate`
 
 - Run the project
-> `Of course you need to have installed nodejs and npm`
+> `Of course you need to have installed nodejs and npm. Note: there is a yarn.lock if you prefer to install the package with it`
+
 > **1.-** ` You need to install node_modules`  **npm install**
->  `or if you prefer to use yarn just`  **npm install --global yarn** `then` **yarn install**
 
->**2.-** `Then you can run this project with`  **npm run dev**  `or`  **yarn dev**
-
+>**2.-** `Then you can run this project depends on you O.S`  **npm run dev-windows** `or` **npm run dev-linux**
 
 - Run tests
->`You can run with` **npm run test** `or with` **yarn test**
+>**3.-** `You can run tests with` **npm run test**
 
-- Run the project without watcher
-
-> **npm run webpack** `or` **yarn webpack**
+>`Note:`**How i rule the release of the project? follow this link: https://semver.org/**

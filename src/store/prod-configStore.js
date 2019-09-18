@@ -1,7 +1,7 @@
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import reducers from '../reducers';
-import thunkActions from '../thunksActions';
+import thunkActions from '../thunks'
 
 /* In prod store there shouldn't be redux-logger */
 const prodStore = (initalState = {}) => {
