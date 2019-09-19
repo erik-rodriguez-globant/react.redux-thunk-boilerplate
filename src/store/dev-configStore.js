@@ -4,7 +4,7 @@ import thunk from 'redux-thunk'
 import rootReducer from '../reducers'
 import thunkActions from '../thunks'
 
-const initalState = {};
+const initalState = {}
 /* In dev store we have a redux-logger */
 const devStore = () => {
   const store = createStore(

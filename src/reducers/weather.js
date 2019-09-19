@@ -1,12 +1,13 @@
-import { FETCH_CURRENT_WEATHER, UPDATE_CURRENT_WEATHER } from '../constants';
+import { FETCH_CURRENT_WEATHER, UPDATE_CURRENT_WEATHER } from '../constants'
 
-export default function Weather(initalState = {}, action){
-  switch(action.type){
+const initalState = {}
+export default function Weather(state = initalState, action) {
+  switch (action.type) {
     case FETCH_CURRENT_WEATHER:
-    return true
+      return state
 
     case UPDATE_CURRENT_WEATHER:
-      return true
+      return state
 
     default:
       return true

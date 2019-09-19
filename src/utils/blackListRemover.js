@@ -1,9 +1,9 @@
 /*
-* Written by Erik Genaro Rodriguez Lazcano <erik.genaro@gmail.com>, August 2019
-* Given a list of .environment files and a blacklist
-* compare if in that given list exists a file named equal as the blacklist,
-* if so remove it
-*/
+ * Written by Erik Genaro Rodriguez Lazcano <erik.genaro@gmail.com>, August 2019
+ * Given a list of .environment files and a blacklist
+ * compare if in that given list exists a file named equal as the blacklist,
+ * if so remove it
+ */
 
 /* eslint no-param-reassign: ["error", { "props": false }] */
 const blackListRemover = (list, blackList = []) => {
@@ -16,4 +16,4 @@ const blackListRemover = (list, blackList = []) => {
   })
 }
 
-module.exports = blackListRemover;
+module.exports = blackListRemover

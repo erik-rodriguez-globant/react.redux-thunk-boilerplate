@@ -1,16 +1,20 @@
-import { FETCH_CURRENT_WEATHER, UPDATE_CURRENT_WEATHER, WELCOME_MESSAGE } from '../constants';
+import {
+  FETCH_CURRENT_WEATHER,
+  UPDATE_CURRENT_WEATHER,
+  WELCOME_MESSAGE,
+} from '../constants'
 
-export const fetchCurrentWeather = (cityId) =>  {
+export const fetchCurrentWeather = cityId => {
   return {
     type: FETCH_CURRENT_WEATHER,
-    cityId
+    cityId,
   }
 }
 
-export const updateCurrentWeather = (info) => {
+export const updateCurrentWeather = info => {
   return {
     type: UPDATE_CURRENT_WEATHER,
-    info
+    info,
   }
 }
 
@@ -20,7 +24,6 @@ const welcomeMessage = () => {
   }
 }
 
-export const loadMessage = (dispatch) => {
+export const loadMessage = dispatch => {
   return dispatch && dispatch(welcomeMessage())
 }
-

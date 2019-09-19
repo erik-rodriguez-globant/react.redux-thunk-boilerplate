@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "at-rule-no-unknown": true,
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-name-case": "lower",
+    "at-rule-empty-line-before": "always",
+    "at-rule-name-space-after": "always",
+    "block-closing-brace-space-after": "always",
+    "bloc-no-empty": true,
+    "color-hex-case": "upper",
+    "color-hex-length": "short",
+    "color-named": "never"
+  }
+}

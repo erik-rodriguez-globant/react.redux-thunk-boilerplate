@@ -15,22 +15,20 @@ class Home extends React.Component {
   }
 
   render() {
-    const {welcomeMessage} = this.props;
+    const { welcomeMessage } = this.props
     return <>{welcomeMessage}</>
   }
 }
 
-const mapStateToProps = (state) => {
-
+const mapStateToProps = state => {
   return {
-    welcomeMessage: state.userWelcome.welcomeMessage
-   
+    welcomeMessage: state.userWelcome.welcomeMessage,
   }
 }
 
 export default withRouter(
   connect(
     mapStateToProps,
-    loadMessage 
+    loadMessage
   )(Home)
 )

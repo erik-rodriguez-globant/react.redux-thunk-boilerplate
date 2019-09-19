@@ -1,20 +1,20 @@
 {
   "name": "reactboileplate",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A React boilerplate",
   "main": "index.js",
   "author": "Erik Rodriguez",
   "scripts": {
+    "format": "prettier --write",
     "dev-linux": "NODE_ENV=development webpack --config webPackConfig/dev-config.js --watch",
     "dev-windows": "SET NODE_ENV=development & webpack --config webPackConfig/dev-config.js  --watch",
     "webpack": "webpack ./webPackConfig/dev-config.js",
-    "test": "jest --coverage",
-    "precommit": "lint-staged"
+    "test": "jest --coverage"
   },
   "lint-staged": {
     "*.js": [
+      "yarn format",
       "eslint",
-      "format:prettier",
       "git add"
     ],
     "src/**/*.js": [
@@ -61,6 +61,7 @@
     "prettier": "^1.18.2",
     "redux-devtools": "^3.5.0",
     "redux-logger": "^3.0.6",
+    "stylelint": "^11.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",

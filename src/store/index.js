@@ -2,8 +2,8 @@
 
 if (process.env.NODE_ENV === 'production') {
   /* eslint-disable-next-line */
-  module.exports = require('./prod-configStore');
-}else{
+  module.exports = require('./prod-configStore')
+} else {
   /* eslint-disable-next-line */
-  module.exports = require('./dev-configStore');
+  module.exports = require('./dev-configStore')
 }
