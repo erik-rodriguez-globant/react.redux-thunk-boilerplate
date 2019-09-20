@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const historyApiFallback = require('connect-history-api-fallback')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const WebpackConfig = require('./webpack.config')
 
 const port = parseInt(process.env.PORT, 10) || 3001
@@ -27,7 +28,7 @@ module.exports = WebpackConfig({
     },
   },
   plugins: [
-    /* webpack.HotModuleReplacementPlugin: Use in case we want to implement hot reloading */
+    /* Webpack.HotModuleReplacementPlugin: Use in case we want to implement hot reloading */
     new HtmlWebpackPlugin({
       inject: true,
       template: 'src/index.html',
@@ -43,6 +44,10 @@ module.exports = WebpackConfig({
       },
       open: false,
       middleware: [historyApiFallback()],
+    }),
+    /* Bundles the CSS ejected from sass-loader */
+    new MiniCssExtractPlugin({
+      filename: 'bundle.css',
     }),
   ],
   devtool: 'eval-source-map',

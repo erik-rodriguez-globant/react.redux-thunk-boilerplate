@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import Store from './store'
 import RootComponent from './containers'
+import './sass/main.scss'
 
 const store = Store()
 
