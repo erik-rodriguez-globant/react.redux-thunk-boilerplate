@@ -1,9 +1,13 @@
 {
-  "name": "reactboileplate",
-  "version": "1.9.0",
+  "name": "reactboilerplate",
+  "version": "1.10.0",
   "description": "A React boilerplate",
   "main": "index.js",
   "author": "Erik Rodriguez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/androiderik/react-redux-boilerplate.git"
+  },
   "scripts": {
     "format": "prettier --write",
     "dev-linux": "NODE_ENV=development webpack --config webPackConfig/dev-config.js --watch",

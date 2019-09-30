@@ -20,3 +20,4 @@
 >**3.-** `You can run tests with` **npm run test**
 
 >`Note:`**How i rule the release of the project? follow this link: https://semver.org/**
+> `Note:` **You are welcome to leave a PR or if there is an issue**
